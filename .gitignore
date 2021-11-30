@@ -3,3 +3,5 @@
 ################################################################################
 
 /.vs/HelloWorld/v16
+/HelloWorld/bin/Debug
+/HelloWorld/obj/Debug
