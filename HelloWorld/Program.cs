@@ -8,24 +8,32 @@ namespace HelloWorld
 {
     class Program
     {
-        //This is an entry point of the program
         /*
-          this
-          is
-            a
-            comment          
+            VARIABLE & DATA TYPES
+            - Variable declaration
+            - Data types
+              - int
+              - float
+              - char
+              - string
+              - bool
         */
         static void Main(string[] args)
         {
-
-            if (true)
-            {
-
-            }
             var myName = "John";
-            var myname = "John";
-            Console.WriteLine("Hello World!");
-            Console.ReadLine();
+            int age = 12;
+            float height = 1.45F;
+            char middleInitial = 'D';
+            string favoriteFood = "Spaghetti";
+            bool doYouLikeDogs = true;
+
+            Console.WriteLine("Hello " + myName);
+            Console.WriteLine("You are " + age + " years old.");
+            Console.WriteLine("Your height is " + height + " meters.");
+            Console.WriteLine("Your middle initial is " + middleInitial + ".");
+            Console.WriteLine("Your favorite food is " + favoriteFood + ".");
+            Console.WriteLine("Do you like dogs? " + doYouLikeDogs);
+            Console.ReadKey();
         }
     }
 }
