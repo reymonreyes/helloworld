@@ -9,22 +9,23 @@ namespace HelloWorld
     class Program
     {
         /*
-            ARITHMETIC OPERATORS
-            + addition
-            - subtraction
-            * multiplication
-            / division
+            COMPARISON OPERATORS
+            ==  equals
+            !=  not equals
+            <   less than
+            <=  less than or equal
+            >   greater than
+            >=  greater than or equal
         */
         static void Main(string[] args)
         {
-            var addition = 1+1;
-            var subtraction = 10-5;
-            var multiplication = 2*5;
-            var division = 10/2;
-            Console.WriteLine("Addition: 1+1 = " + addition);
-            Console.WriteLine("Subtraction: 10-5 = " + subtraction);
-            Console.WriteLine("Multiplication: 2*5 = " + multiplication);
-            Console.WriteLine("Division: 10/2 = " + division);
+            Console.WriteLine("1 == 1 is " + (1 == 1));
+            Console.WriteLine("1 != 1 is " + (1 != 1));
+            Console.WriteLine("2 < 3 is " + (2 < 3));
+            Console.WriteLine("2 <= 2 is " + (2 <= 2));
+            Console.WriteLine("2 > 1 is " + (2 > 1));
+            Console.WriteLine("1 >= 1 is " + (1 >= 1));
+
             Console.ReadLine();
         }
     }
