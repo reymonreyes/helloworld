@@ -9,24 +9,31 @@ namespace HelloWorld
     class Program
     {
         /*
-            COMPARISON OPERATORS
-            ==  equals
-            !=  not equals
-            <   less than
-            <=  less than or equal
-            >   greater than
-            >=  greater than or equal
+            LOGICAL OPERATORS
+            &   AND
+            |   OR
+            &&  conditional AND
+            ||  conditional OR
+            !   NOT
+            ?:  ternary conditional
         */
         static void Main(string[] args)
         {
-            Console.WriteLine("1 == 1 is " + (1 == 1));
-            Console.WriteLine("1 != 1 is " + (1 != 1));
-            Console.WriteLine("2 < 3 is " + (2 < 3));
-            Console.WriteLine("2 <= 2 is " + (2 <= 2));
-            Console.WriteLine("2 > 1 is " + (2 > 1));
-            Console.WriteLine("1 >= 1 is " + (1 >= 1));
-
+            //Console.WriteLine("false & true is " + (false & RightHand()));
+            //Console.WriteLine("true | false is " + (true | RightHand()));
+            //Console.WriteLine("true && false is " + (false && RightHand()));
+            //Console.WriteLine("true || RightHand() is " + (true || RightHand()));
+            //Console.WriteLine("false & RightHand() is " + (false & RightHand()));
+            //Console.WriteLine("!false is " + (!false));
+            Console.WriteLine("true ? true : false is " + (true ? true : false));
+            
             Console.ReadLine();
+        }
+
+        static bool RightHand()
+        {
+            Console.WriteLine("This is a RightHand method.");
+            return false;
         }
     }
 }
